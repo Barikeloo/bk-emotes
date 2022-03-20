@@ -1,0 +1,144 @@
+body {
+    user-select: none;
+    /* background-image: url(https://media.discordapp.net/attachments/948312746166992968/953637687183691816/218_20211212133326_1.png?width=1193&height=671);
+    background-size: cover; */
+} 
+i {
+    /* text-shadow: 0 0 .09vw #fff; */
+}
+@font-face {
+	font-family: boxed;
+	src: url('/ui/boxed.ttf');
+}
+.container {
+    position: absolute;
+    background-color: #202020;
+    box-shadow: 0 0 .8vw #202020;
+    width: 20vw;
+    height: 21.5vw;
+    right: 9%;
+    top: 40%;
+    border-radius: .3vw;
+    overflow: hidden;
+}
+.bloque-clases {
+    margin: 2%;
+    /* background-color: rgba(90, 215, 253, 0.808);
+    box-shadow: 0 0 .3vw rgba(90, 215, 253, 0.808); */
+    width: 19.15vw;
+    height: 3.8vw;
+    border-radius: .3vw;
+}
+.bloque-animaciones {
+    padding: .3vw;
+    margin: .4vw;
+    /* background-color: rgb(28, 107, 209);
+    box-shadow: 0 0 .3vw rgb(28, 107, 209); */
+    width: 18.6vw;
+    height: 15.9vw;
+    border-radius: .3vw;
+    overflow-y:scroll;
+    flex:1 1 auto;
+    overflow-y:auto;
+    overflow-x:hidden
+}
+.tipo {
+    display: inline-block;
+    margin: .42vw;
+    background-color: #e06d6d;
+    width: 2.8vw;
+    height: 2.8vw;
+    box-shadow: 0 0 .2vw #e06d6d;
+    border-radius: .3vw;
+    transition: .5s;
+    transform: translateY(4%);
+}
+.tipo:hover {
+    background-color: #e05454;
+    cursor: pointer;
+    box-shadow: 0 0 .3vw #e05454;
+    transition: .5s;
+}
+#icono-general {
+    position: absolute;
+    color: #ccc;
+    font-size: 1.5vw;
+    margin: .7vw;
+    top: 4%;
+}
+#icono-bailar {
+    position: absolute;
+    color: #ccc;
+    font-size: 1.5vw;
+    margin: .8vw;
+    top: 4%;
+}
+#icono-objetos {
+    position: absolute;
+    color: #ccc;
+    font-size: 1.5vw;
+    margin: .8vw;
+    top: 4%;
+}
+#icono-amigos {
+    position: absolute;
+    color: #ccc;
+    font-size: 1.5vw;
+    padding: .5vw;
+    top: 15%;
+}
+#icono-andar {
+    position: absolute;
+    color: #ccc;
+    font-size: 1.5vw;
+    padding: .6vw;
+    top: 12%;
+    left: 10.5%;
+}
+.animacion {
+    background-color: #838383;
+    height: 2.6vw;
+    border-radius: .3vw;
+    transition: .3s;
+    margin: .2vw;
+}
+.animacion:hover {
+    background-color: #e05454;
+    box-shadow: 0 0 .3vw #e05454;
+    transition: .3s;
+    cursor: pointer;
+}
+.titulo {
+    padding: .8vw;
+    width: 17vw;
+    color: rgb(0, 0, 0);
+    font-family: boxed;
+}
+.comando {
+    color: rgb(26, 26, 26);
+    float: right;
+    margin-inline-end: .6vw;
+}
+::-webkit-scrollbar{
+    position:absolute;
+    width:.2vw;
+    height:.1vw;
+    left:-.5vw;
+    transition: .5s;
+}
+::-webkit-scrollbar-button{
+    width:0;
+    height:0;
+}
+::-webkit-scrollbar-thumb{
+    background:#e05454;
+    border:0 #6c42cf;
+    border-radius:20vw;
+}
+/* ::-webkit-scrollbar-thumb:hover{
+    background:#6c42cf;
+    box-shadow: 0 0 .3vw #6c42cf;
+} */
+::-webkit-scrollbar-corner{
+    background:transparent;
+}

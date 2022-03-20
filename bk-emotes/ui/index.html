@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="/ui/main.css">
+    <title>a</title>
+</head>
+<body>
+    <div class="container" id="app" v-if="opened">
+        <div class="bloque-clases">
+            <div class="tipo" v-on:click="setTempList('Gestos')">
+                <i class="fas fa-align-left" id="icono-general"></i>
+            </div>
+            <div class="tipo" v-on:click="setTempList('Bailes')">
+                <i class="fas fa-running" id="icono-bailar"></i>
+            </div>
+            <div class="tipo" v-on:click="setTempList('Objetos')">
+                <i class="fas fa-person-sign" id="icono-objetos"></i>
+            </div>
+            <div class="tipo" v-on:click="setTempList('Compartidas')">
+                <i class="fas fa-user-friends" id="icono-amigos"></i>
+            </div>
+            <div class="tipo" v-on:click="setTempList('Formas de caminar')">
+                <i class="far fa-walking" id="icono-andar"></i>
+            </div>
+        </div>
+        <div class="bloque-animaciones">
+            <div class="animacion" v-on:click="makeAnimation(anim)" v-for="anim in tempList">
+                <div class="titulo">
+                    <span>{{ anim.label }}</span>
+                    <span class="comando"><span>/e </span>{{ anim.value }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/ui/app.js"></script>
+</body>
+</html>
